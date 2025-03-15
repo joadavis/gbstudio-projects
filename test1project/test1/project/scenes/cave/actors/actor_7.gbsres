@@ -1,0 +1,123 @@
+{
+  "_resourceType": "actor",
+  "id": "785ed1c2-08e2-4951-81bc-1e2fc2592df5",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "94d111c6-7873-41c8-bf3b-be3a5ca31d58",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_20",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "CAKE!\nSo many candles...\nMake a Wish?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "1e2b979b-10d9-4741-9ba4-f4984d1998c3"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "OH YEAAAHHH!",
+        "falseText": "Maybe Later"
+      },
+      "id": "ea026470-0003-4d37-9e6f-b8764a53016e"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "splitOut",
+              "actorId": "player",
+              "distance": 20,
+              "speed": 2,
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "b13434a1-b5e8-4edc-8ad2-f9ac8110a494"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "8a52b387-2a88-4741-8d4e-ca56acea4672",
+              "x": {
+                "type": "number",
+                "value": 15
+              },
+              "y": {
+                "type": "number",
+                "value": 22
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "dce179e2-853c-4150-b37c-ade76e5c3ef4"
+          }
+        ],
+        "false": []
+      },
+      "id": "a4ecfe8d-70d4-4b88-a916-57ef565228f8"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "bfd07844-4a5f-4c2f-b2c1-3e61cdf63303"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 4,
+  "y": 11,
+  "_index": 6
+}
