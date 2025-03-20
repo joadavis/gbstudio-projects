@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "c3bacf56-ed29-4dde-a662-e5534b817a92",
+  "name": "bloons",
+  "symbol": "bg_house_copy_",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "bloons.png",
+  "tileColors": ""
+}

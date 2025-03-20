@@ -1,0 +1,29 @@
+{
+  "_resourceType": "scene",
+  "id": "de15c210-dd8a-4965-886c-babd100e8dea",
+  "_index": 17,
+  "name": "Bloons TD 0.13",
+  "backgroundId": "c3bacf56-ed29-4dde-a662-e5534b817a92",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-2",
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [
+    "2ebac764-bebb-4707-920b-2a975675b2cb",
+    "default-bg-3"
+  ],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_18",
+  "x": 1239,
+  "y": 946,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "c5148928-e4b5-4793-ae52-13329270e250"
+}
